@@ -19,7 +19,7 @@ public abstract class Node : ScriptableObject
         if (!started)
         {
             OnStart();
-            started = false;
+            started = true;
         }
 
         state = OnUpdate();
