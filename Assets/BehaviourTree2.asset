@@ -15,8 +15,8 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: df2daac873d823b4e9ba0729e61ccd39
-  position: {x: 0, y: 0}
-  child: {fileID: 0}
+  position: {x: 255.12, y: 287.28}
+  child: {fileID: 457976310426861699}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33,3 +33,21 @@ MonoBehaviour:
   treeState: 0
   nodes:
   - {fileID: -7835898611519971765}
+  - {fileID: 457976310426861699}
+--- !u!114 &457976310426861699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dea43be74d3f99f459cd5d0a9e2f1d30, type: 3}
+  m_Name: SequencerNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: ab1a6b48e8058484e9398a6342e99d8b
+  position: {x: 280, y: 462}
+  children: []

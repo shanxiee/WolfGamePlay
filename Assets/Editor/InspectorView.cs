@@ -19,10 +19,16 @@ public class InspectorView : VisualElement
     internal void UpdateSelection(NodeView nodeView)
     {
         Clear();
-        
+
         UnityEngine.Object.DestroyImmediate(editor);
         editor = Editor.CreateEditor(nodeView.node);
-        IMGUIContainer contaner = new IMGUIContainer(() => { editor.OnInspectorGUI(); });
+        IMGUIContainer contaner = new IMGUIContainer(() =>
+        {
+            if (editor.target)
+            {
+                editor.OnInspectorGUI();
+            }
+        });
         Add(contaner);
     }
 }

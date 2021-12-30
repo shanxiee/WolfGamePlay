@@ -15,6 +15,10 @@ public abstract class Node : ScriptableObject
     public bool started = false;
     [HideInInspector] public string guid;
     [HideInInspector] public Vector2 position;
+
+    [HideInInspector] public BlackBoard blackBoard;
+    [HideInInspector] public AiAgent agent;
+    [TextArea]public string description;
     public State Update()
     {
         if (!started)
