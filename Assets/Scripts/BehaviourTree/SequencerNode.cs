@@ -9,6 +9,7 @@ public class SequencerNode : CompositeNode
     protected override void OnStart()
     {
         current = 0;
+        state = State.Running;
     }
 
     protected override void OnStop()

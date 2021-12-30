@@ -9,7 +9,8 @@ public class DebugLogNode : ActionNode
 
     protected override void OnStart()
     {
-       Debug.Log($"OnStart{message}");
+      state = State.Running;
+      Debug.Log($"OnStart{message}");
     }
 
     protected override void OnStop()
